@@ -125,38 +125,3 @@ for value in uniqueListOfFlights:
     arcpy.management.DeleteIdentical("PublishedTracks", "icao24Callsign", None, 0)
 
 
-
-
-#turns points into lines
-
-#for each row in FlightDataPublished
-# if icaoCallsign field value matches another row
-# put it in a feature class
-#sort that feature class by time ascending
-#make a line out of that feature class
-# delete that line
-
-#turn Epoch into legible time/date
-
-#do a second request that determines the estimated departure and arrival airport
-
-#getArrivalDeparture = requests.get("https://USERNAME:PASSWORD@opensky-network.org/api/flights/aircraft?icao24=ab9387&begin=1619999012&end=1620093712")
-
-
-
-#searchCursorFields = ['callsign', 'icao24', 'time_position']
-#expression = "callsign = callsign && icao24 = icao24"
-#with arcpy.da.SearchCursor(FlightDataPublished, searchCursorFields, expression) as cursor:
-#    outputList = []
-#    for row in cursor:
-#        outputList.append(row)
-#    sorted(outputList)
-
-
-#tie arrival and departure data together
-
-#for each in response plot point
-
-# draw line if points with same ICAO exist
-
-
